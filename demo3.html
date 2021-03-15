@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+body{
+  font-family: roboto;
+  color: black;
+}
+  .nomi {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.nomi video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.nomi .container {
+    position: relative;
+    z-index: 2;
+}
+
+.nomi .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+    /*.nomi {*/
+    /*    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;*/
+    /*}*/
+    /*.nomi video {*/
+    /*    display: none;*/
+    /*}*/
+}
+
+@media only screen and (max-width: 600px) {
+    .nomi {
+        position: relative;
+        background-color: black;
+        height: auto;
+        min-height: 13rem;
+        width: 100%;
+        overflow: hidden;
+    }
+    .nomi video {
+        position: absolute;
+        width: 100%;
+        height: auto;
+    }
+    .golden-img {
+        width: 100%;
+        margin-top: 5rem;
+    }
+}
+
+  .multi-item-carousel .carousel-inner > .item {
+  transition: 500ms ease-in-out left;
+}
+.multi-item-carousel .carousel-inner .active.left {
+  left: -33%;
+}
+.multi-item-carousel .carousel-inner .active.right {
+  left: 33%;
+}
+.multi-item-carousel .carousel-inner .next {
+  left: 33%;
+}
+.multi-item-carousel .carousel-inner .prev {
+  left: -33%;
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .multi-item-carousel .carousel-inner > .item {
+    transition: 500ms ease-in-out left;
+    transition: 500ms ease-in-out all;
+    -webkit-backface-visibility: visible;
+            backface-visibility: visible;
+    -webkit-transform: none!important;
+            transform: none!important;
+  }
+}
+.multi-item-carousel .carouse-control.left,
+.multi-item-carousel .carouse-control.right {
+  background-image: none;
+}
+
+</style>
+</head>
+<body>
+   <!-- ===============video for landing page ==================-->
+        <div class="nomi">
+            <div class="overlay"></div>
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="https://res.cloudinary.com/ddtlvkygf/video/upload/v1614687777/thebusinessfuse/sgah_online-video-cutter.com_3_xbthvp.mp4" type="video/mp4">
+        </video>
+            <div class="container">
+                <div style="margin-top: 20rem; margin-left:-50px;">
+                    <img src="https://res.cloudinary.com/ddtlvkygf/image/upload/v1615029980/thebusinessfuse/unnamed_2_ltxnpx.png" class="golden-img">
+                </div>
+            </div>
+        </div>
+   <div style="background-color: #000000;">     
+  <div class="container" style="background-color: #000000;">
+        <center>
+            <h2 style="font-size:35px; color: white; font-weight: bolder; color: bolder;"><b>Innovation</b></h2><br>
+            <p style="color:white;">The New York Times has always been on the forefront when it comes to finding new ways to keep readers engaged. We listen and respond to our audience’s demands for more interactive digital media and audio, and are constantly paving new avenues for brands to participate in these endeavors.</p>
+        </center><br><br><br>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="carousel slide multi-item-carousel" id="theCarousel">
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="col-xs-4"><a href="#1"><img src="https://images.ctfassets.net/jxri9wzjewim/48CCNGUprCBf25aw3tA24X/e8f238eec21746b0042aa9c9459f7d00/flex_frames.png?w=481&h=758&q=100" class="img-responsive"></a></div>
+          </div>
+          <div class="item">
+            <div class="col-xs-4"><a href="#1"><img src="https://images.ctfassets.net/jxri9wzjewim/7zSdxeaqT4cIYWr0rVLZfu/90d04ae09d29e80efaf7a935971e489c/the_daily.png?w=481&h=758&q=100" class="img-responsive"></a></div>
+          </div>
+          <div class="item">
+            <div class="col-xs-4"><a href="#1"><img src="https://images.ctfassets.net/jxri9wzjewim/7lH8pNxDuks0lO5Atmqurf/7cec4fb39927c2fa87a149355473a090/ar.png?w=481&h=758&q=100" class="img-responsive"></a></div>
+          </div>
+          <div class="item">
+            <div class="col-xs-4"><a href="#1"><img src="https://images.ctfassets.net/jxri9wzjewim/7GGOS4Ww4nhOb2pRUKNImI/6884b0b62c57395c8749cf09936f365d/morning_briefing_email.png?w=481&h=758&q=100" class="img-responsive"></a></div>
+          </div>
+          <div class="item">
+            <div class="col-xs-4"><a href="#1"><img src="https://images.ctfassets.net/jxri9wzjewim/7bVrnj6nmlVpPMy4zdifiE/86c77a567e7eaf56f1d360c411c73db0/article_headline.png?w=481&h=758&q=100" class="img-responsive"></a></div>
+          </div>
+          <div class="item">
+            <div class="col-xs-4"><a href="#1"><img src="https://images.ctfassets.net/jxri9wzjewim/48CCNGUprCBf25aw3tA24X/e8f238eec21746b0042aa9c9459f7d00/flex_frames.png?w=481&h=758&q=100" class="img-responsive"></a></div>
+          </div>
+          <!-- add  more items here -->
+          <!-- Example item start:  -->
+
+          <div class="item">
+            <div class="col-xs-4"><a href="#1"><img src="https://images.ctfassets.net/jxri9wzjewim/7GGOS4Ww4nhOb2pRUKNImI/6884b0b62c57395c8749cf09936f365d/morning_briefing_email.png?w=481&h=758&q=100" class="img-responsive"></a></div>
+          </div>
+
+          <!--  Example item end -->
+        </div>
+        <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+        <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+      </div>
+    </div>
+  </div>
+</div><br><br><br>
+</div>
+<div class="jumbotron">
+    <div class="row text-center">
+        <div class="col-sm-3" style="border-right: 3px solid black ;">
+      
+        <h2 style="font-size:45px; text-align: center; font-weight: bolder; color: bolder;"><b>Audience Snapshot</b></h2>
+        </div>
+        <div class="col-sm-2">
+          <img src="https://images.ctfassets.net/jxri9wzjewim/7ve389KMuh5o4ILwhoVkHe/2e0d1786539e79f874cbe3e1f79cf8f3/NYTMediaKit_Icon_Award_Black.svg" alt="" width="40%">
+          <h4 class="" style="color: black; font-size:30px; font-weight:bolder;"><b>#1</b></h4>
+          <h4 style="color: black; font-size:20px;;">Destination for <b>Opinion Leaders</b> for 16 years </h4>
+        </div>
+        <div class="col-sm-2">
+          <img src="https://images.ctfassets.net/jxri9wzjewim/6G9lj1JsHAIM695MDQdokF/4d4bc3ca56168545c54881317c5649b9/NYTMediaKit_Icon_World_Black.svg" alt="" width="40%">
+           <h4 class="" style="color: black; font-size:30px; font-weight:bolder;"><b>#2</b></h4>
+          <h4 style="color: black; font-size:20px;;">Destination for <b>Opinion Leaders</b> for 16 years </h4>
+        </div>
+        <div class="col-sm-2">
+          <img src="https://images.ctfassets.net/jxri9wzjewim/35vpEllY6uqQbLliCfcJqI/7257fda2857ce1a7ae1721a508f4e2f6/NYTMediaKit_Icon_Audience_Black.svg" alt="" width="40%">
+           <h4 class="" style="color: black; font-size:30px; font-weight:bolder;"><b>#3</b></h4>
+          <h4 style="color: black; font-size:20px;;">Destination for <b>Opinion Leaders</b> for 16 years </h4>
+        </div>
+        <div class="col-sm-2">
+            <img src="https://images.ctfassets.net/jxri9wzjewim/2elOfRzCszJTlugTW7Fu0V/bcf140452c30a21051ac889b152be314/NYTMediaKit_Icon_Money_Black.svg" alt="" width="40%">
+             <h4 class="" style="color: black; font-size:30px; font-weight:bolder;"><b>#4</b></h4>
+          <h4 style="color: black; font-size:20px;;">Destination for <b>Opinion Leaders</b> for 16 years </h4>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <center>
+        <h2 style="font-size:45px;  font-weight: bolder; color: bolder;"><b>Contact Us</b></h2><br>
+    </center>
+    <div class="row ">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+          <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputPassword4">Company</label>
+                  <input type="text" class="form-control" id="inputPassword4" placeholder="Password">
+                </div>
+              </div>
+           
+              <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Telephone</label>
+                    <input type="tel" class="form-control" id="inputPassword4" placeholder="Password">
+                  </div>
+              </div>
+           
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+
+              <div class="form-group w-50">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    You agree to receive occasional email updates for The New York Times’s advertising products and services. You can opt out by clicking “unsubscribe” within an email or by contacting us.
+                  </label>
+                </div>
+              </div>
+            
+            <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+          </form>
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
+</div>
+<script type="text/javascript">
+  // Instantiate the Bootstrap carousel
+$('.multi-item-carousel').carousel({
+  interval: false
+});
+
+// for every slide in carousel, copy the next slide's item in the slide.
+// Do the same for the next, next item.
+$('.multi-item-carousel .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+
+  if (next.next().length>0) {
+    next.next().children(':first-child').clone().appendTo($(this));
+  } else {
+    $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+  }
+});
+</script>
+ <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+</body>
+</html>
